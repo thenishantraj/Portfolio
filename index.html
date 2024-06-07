@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6606919415.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+      <div class="container">
+        <nav>
+            <img src="C:\Users\nisha\Downloads\demo.png" class="demo">
+            <ul id="sidemenu">
+                <li><a href="#header" onclick="opentab('home')">Home</a></li>
+                <li><a href="#about" onclick="opentab('about')">About</a></li>
+                <li><a href="#services" onclick="opentab('services')">Services</a></li>
+                <li><a href="#portfolio" onclick="opentab('portfolio')">Projects</a></li>
+                <li><a href="#contact" onclick="opentab('contact')">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <!-- <p>AI Developer</p> -->
+            <h1> Hey!<br>I'm <span>Nishant</span> Raj.</h1>         
+            <p><span class ="multiple-text"></span></p>
+        </div>
+      </div>  
+    </div>
+    <!----about----->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="C:\Users\nisha\Downloads\Portfolio\nishantpic01.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>A 2nd year Computer Science student at Techno Main Salt Lake, an efficient student committed towards quickly developing skills and acquiring new knowledge. I believe in building projects that are innovative and solve real life problems.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                        <p class="tab-links"onclick="opentab('positon of responsibility')">Position of Responsibility</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Backend Web Developer</li>
+                            <li><span>Coding Language</span><br>python, C/C++, SQL</li>
+                            <li><span>Hard Skills</span><br>Artificial Intelligence, Machine Learning, Object-oriented Programming</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.Tech (Computer Science and Engg.)</span><br>Techno Main Salt Lake (2023-2026)</li>
+                            <li><span>Diploma (Computer Science and Engg.)</span><br>Government polytechnic Patna-07 (2020-2023)</li>
+                            <li><span>Higher Secondary School</span><br>Dr. J.M.T.S.A.N.S Inter College (2020) </li>
+                            <li><span>Secondary School</span><br>P N S High School (2018)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="positon of responsibility">
+                        <ul>
+                            <li><span>Student Council - 2020-2023</span><br>IT Council Representative</li>
+                            <li><span>Innovision Club</span><br>Event Manager</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------services----->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>AI Developer</h2>
+                    <!-- <p>xyz</p>
+                    <a href="#">learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Backend Developer</h2>
+                    <!-- <p>xyz</p>
+                    <a href="#">learn more</a> -->
+                </div>
+                <!-- <div>
+                    <h2>UI/UX Design</h2>
+                    <p>XYZ</p>
+                    <a href="#">learn more</a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!------- Portfolio ------>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="C:\Users\nisha\Downloads\Portfolio\project-01.jpg">
+                </div>
+                <div class="work">
+                    <img src="C:\Users\nisha\Downloads\Portfolio\project-02.jpg">
+                </div>
+                <div class="work">
+                    <img src="C:\Users\nisha\Downloads\Portfolio\project-03.jpg">
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!---- Contact ------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i><a href="mailto:nishantraj6581@gmail.com">nishantraj6581@gmail.com</a></p>
+                    <p><i class="fa-solid fa-phone"></i><a href="tel:+91-6205698086">+91-6205698086</a></p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/the-nishant-raj-82972b208/"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/the_nishant_raj"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="C:\Users\nisha\Downloads\Portfolio\nishantresume.pdf" download class="btn btn2">Download Cv</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Made with love <i class="fa-solid fa-heart"></i> by Nishant!</p>
+        </div>
+    </div>
+    
+    <!-- <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script> -->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        var sidemenu = document.getElementById("sidemenu");
+    
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+            closemenu();
+        }
+    
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+    
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".multiple-text",{
+            strings: ["Coder","Backend Web Developer","AI Engineer"],
+            loop: true,
+            typeSpeed: 100,
+            backSpeed: 80,
+            backDelay: 1500,
+        })
+    </script>
+
+    <!-- <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script> -->
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxcCXPZ6vh6WTgKgpbRiMgXxONOfU_q_avvAaSjpOFff1H7gs7lU3rr4t3Ne0H_bc8e0w/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                msg.innerHTML= "Message sent sucessfully!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+  
+  <script>
+    // parallax effect to header background
+    var header = document.getElementById("header");
+
+    function parallaxEffect() {
+        var scrollPosition = window.scrollY;
+        header.style.backgroundPositionY = scrollPosition * 0.8 + "px";
+    }
+
+    window.addEventListener("scroll", parallaxEffect);
+  </script>
+</body>
+</html> 
